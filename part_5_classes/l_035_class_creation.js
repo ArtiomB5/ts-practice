@@ -1,10 +1,15 @@
-var User = /** @class */ (function () {
-    function User(constructors_name) {
+"use strict";
+class User {
+    constructor(constructors_name) {
         this.name = constructors_name;
     }
-    return User;
-}());
-var user = new User('Test User Name');
+}
+const user = new User('Test User Name');
 console.log(user);
 user.name = 'Peter';
 console.log(user);
+class Admin {
+}
+const admin = new Admin();
+admin.role = 1;
+console.log(admin);
